@@ -23,8 +23,12 @@
       <header id="header">
 
        <nav>
-            <img src="assets/logo.png" class="logo" alt="logo">
-            <img src="assets/sun.png" class="sun" alt="sun-icon">
+            <img src="assets/logo.gif" class="logo-negro" alt="logo">
+            <img src="assets/logo-blanco.gif" class="logo-blanco" alt="logo">
+            <div class="push">Mediodia-Mediodia-Medio</div>
+            <!-- <div id="logo-animado"></div> -->
+            <img src="assets/sun.png" id="sun-white" class="sun" alt="sun-icon">
+            <img src="assets/sun-black.png" id="sun-black" class="sun" alt="sun-icon">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">CASE STUDIES</a>
@@ -48,6 +52,9 @@
               <li>
               <a href="#">CONTACT</a>
               </li>
+              <li>
+                <a href="#">IG</a>
+                </li>
           </ul>
         </nav>
 
@@ -65,12 +72,12 @@
   <section class="strategy">
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 strategy-left">
           <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">CREATIVE<br>STRATEGY</h1>
-          <div class="image-placeholder"></div>
+          <img src="assets/placeholder-images/01.jpg" id="strategy-desk-img1" class="image-placeholder" alt="Image1">
         </div>
         <div class="col-6">
-          <img src="assets/6oclock.svg" class="clock-image" alt="clock-image">
+          <img id="strategy-clock" src="assets/6oclock.svg" class="clock-image" alt="clock-image">
           <p class="support-text">We find ways to create conversations around great products and companies.</p>
         </div>
       </div>
@@ -81,15 +88,15 @@
     <section class="brand">
 
       <div class="row">
-        <div class="col-6">
-          <img src="assets/9oclock.png" class="clock-image" alt="clock-image">
+        <div class="col-6 brand-left">
+          <img src="assets/9oclock.png"  id="brand-clock" class="clock-image" alt="clock-image">
           <p class="support-text">We use empathy as a tool to discover what’s really important to people.</p>
-          <img src="assets/brand-img2.png" class="brand__image2 image-left" alt="brand-image2">
+          <img id="brand-desk-img2" src="assets/brand-img2.png" class="brand__image2 image-left" alt="brand-image2">
         </div>
-        <div class="col-6">
+        <div class="col-6 brand-rigth">
           <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">BRAND<br>INTELLIGENCE</h1>
-          <div class="brand__image-placeholder"></div>
-          <img src="assets/brand-img3.png" class="brand__image3 image-right" alt="brand-image3">
+          <img id="brand-desk-img1" src="assets/brand-img1.png" class="brand__image1" alt="brand-image1">
+          <img id="brand-desk-img3" src="assets/brand-img3.png" class="brand__image3 image-right" alt="brand-image3">
         </div>
       </div>
 
@@ -99,15 +106,15 @@
     <section class="expression">
 
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 expression-left">
           <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">CREATIVE<br>EXPRESSION</h1>
-          <img src="assets/expression-img1.png" class="expression__image1 image-left" alt="expression-image1">
-          <img src="assets/expression-img3.png" class="expression__image3 image-left" alt="expression-image3">
+          <img id="expression-desk-img1" src="assets/expression-img1.png" class="expression__image1 image-left" alt="expression-image1">
+          <img id="expression-desk-img3" src="assets/expression-img3.png" class="expression__image3 image-left" alt="expression-image3">
         </div>
-        <div class="col-6">
-          <img src="assets/3oclock.svg" class="clock-image" alt="clock-image">
+        <div class="col-6 expression-rigth">
+          <img src="assets/3oclock.svg" id="expression-clock" class="clock-image" alt="clock-image">
           <p class="support-text">We make design and creative content that inspires people, from digital to analogue.</p>
-          <img src="assets/expression-img2.png" class="expression__image2 image-right" alt="expression-image2">
+          <img id="expression-desk-img2" src="assets/expression-img2.png" class="expression__image2 image-right" alt="expression-image2">
         </div>
       </div>
 
@@ -119,7 +126,7 @@
 
       <div class="row">
         <div class="col-6">
-          <img src="assets/12oclock.svg" class="clock-image" alt="clock-image">
+          <img src="assets/12oclock.png" id="dialogue-clock" class="clock-image" alt="clock-image">
           <p class="support-text">Our projects have been featured on</p>
           <div class="logos-container">
             <img src="assets/logos/01.png" alt="logo1">
@@ -132,10 +139,10 @@
             <img src="assets/logos/08.png" alt="logo8">
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 dialogue-rigth">
           <h1 class="section-title" data-aos="fade-up" data-aos-duration="1000">SPARK<br>DIALOGUE</h1>
-          <div class="dialogue__image-placeholder"></div>
-          <img src="assets/dialogue-image2.png" class="dialogue__image2 image-right" alt="dialogue-image2">
+          <img id="dialogue-desk-img1" src="assets/placeholder-images/03.jpg" class="dialogue__image1" alt="dialogue-image1">
+          <img id="dialogue-desk-img2" src="assets/dialogue-image2.png" class="dialogue__image2 image-right" alt="dialogue-image2">
         </div>
       </div>
 
@@ -148,7 +155,7 @@
     <section class="strategy-mobile">
         <h1 class="title-mobile" data-aos="fade-up" data-aos-duration="1000">CREATIVE<br>STRATEGY</h1>
         <div id="strategy-text" class="support-text-mobile">
-          <img src="assets/3oclock.svg" alt="clock">
+          <img src="assets/3oclock.svg" id="strategy-clock-mob" alt="clock">
           <p>We make design and creative content that inspires people, from digital to analogue.</p>
         </div>
         <div id="strategy-images-container" class="strategy-images-container">
@@ -161,7 +168,7 @@
     <section class="brand-mobile">
       <h1 class="title-mobile" data-aos="fade-up" data-aos-duration="1000">BRAND<br>INTELLIGENCE</h1>
       <div id="brand-text" class="support-text-mobile">
-        <img src="assets/6oclock.svg" alt="clock">
+        <img src="assets/6oclock.svg" id="brand-clock-mob" alt="clock">
         <p>We use empathy as a tool to discover what’s really important to people.</p>
       </div>
       <div class="brand-images-container">
@@ -174,7 +181,7 @@
   <section class="expression-mobile">
     <h1 class="title-mobile" data-aos="fade-up" data-aos-duration="1000">CREATIVE<br>EXPRESSION</h1>
     <div id="expression-text" class="support-text-mobile">
-      <img src="assets/9oclock.svg" alt="clock">
+      <img src="assets/9oclock.svg" id="expression-clock-mob" alt="clock">
       <p>We make design and creative content that inspires people, from digital to analogue.</p>
     </div>
     <div class="expression-images-container">
@@ -217,14 +224,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              STRATEGY
+              Estrategia
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#main-accordion">
             <div class="accordion-body">
               <!-- CONTENIDO DE VISION -->
 
-                <strong>AQUI VA EL CONTENIDO DEL PRIMERO</strong>
+                <ul>
+                  <li>→ Estrategias de comunicación</li>
+                  <li>→ Discovery sessions</li>
+                  <li>→ Diseño de experiencia de usuario</li>
+                  <li>→ Estrategia de marca</li>
+                  <li>→ Estrategia de contenidos</li>
+                  <li>→ Campañas de comunicación</li>
+                </ul>
+
+                     
 
               <!-- FIN CONTENIDO DE VISION -->
 
@@ -235,14 +251,23 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              BRANDING
+              Branding
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#main-accordion">
             <div class="accordion-body">
               <!-- CONTENIDO Nuestros Servicios -->
 
-                <strong>AQUI VA EL CONTENIDO DEL SEGUNDO</strong>
+              <ul>
+                <li>→ Desarrollo de marca & rebranding</li>
+                <li>→ Identidad verbal & gráfica</li>
+                <li>→ Guías de estilo de marca</li>
+                <li>→ Personalidad de marca</li>
+                <li>→ Collateral, Print & Packaging</li>
+                <li>→ Diseño de brandscaping</li>
+                <li>→ Assets de marca</li>
+              </ul>
+
 
               <!-- FIN CONTENIDO Nuestros Servicios -->
             </div>
@@ -252,12 +277,20 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              DIGITAL STRATEGY
+              Estrategia Digital
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#main-accordion">
             <div class="accordion-body">
-              <strong>AQUI VA EL CONTENIDO DEL TERCERO</strong>  
+                <ul>
+                  <li>→ Diseño y desarrollo web</li>
+                  <li>→ UX/UI</li>
+                  <li>→ Diseño de arquitectura de información</li>
+                  <li>→ Wireframing</li>
+                  <li>→ Prototipado</li>
+                  <li>→ Sesiones de planeación de contenidos</li>
+                  <li>→ Web Apps</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -265,12 +298,20 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingFour">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              PRODUCTION CONTENT
+              Producción de Contenidos
             </button>
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#main-accordion">
             <div class="accordion-body">
-              <strong>AQUI VA EL CONTENIDO  DEL CUARTO</strong>  
+                <ul>
+                  <li>→ Copywriting</li>
+                  <li>→ Storytelling</li>
+                  <li>→ Conceptos de marca</li>
+                  <li>→ Diseño de ilustración</li>
+                  <li>→ Motion Graphics</li>
+                  <li>→ Videos demo</li>
+                  <li>→ Videos live-action</li>
+                </ul>
             </div>
           </div>
         </div>
@@ -291,8 +332,7 @@
       <img src="assets/mediodia-logo-big.png" alt="logo-big">
 
       <div class="footer__marquee">
-        <div>WE WANT TO HEAR FROM YOU</div>
-        <div>WE WANT TO HEAR FROM YOU</div>
+        <div>WE WANT TO HEAR FROM YOU • WE WANT TO HEAR FROM YOU • WE WANT TO HEAR FROM YOU </div>
       </div>
     </footer>
 
