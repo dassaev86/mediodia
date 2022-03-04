@@ -133,12 +133,13 @@ window.addEventListener('scroll', function(e) {
         document.querySelector("body").classList.add("header-scroll");
         document.querySelector(".logo-negro").style.opacity = "0";
         document.querySelector(".logo-blanco").style.opacity = "1";
-        document.querySelector("#sun-white").style.display = "none"
-        document.querySelector("#sun-black").style.display = "block"
-        document.querySelectorAll(".nav-link")[0].style.color = "#000000"
-        document.querySelectorAll(".nav-link")[1].style.color = "#000000"
-        document.querySelectorAll(".nav-link")[2].style.color = "#000000"
-        
+        document.querySelector("#sun-white").style.display = "none";
+        document.querySelector("#sun-black").style.display = "block";
+        document.querySelectorAll(".nav-link")[0].style.color = "#000000";
+        document.querySelectorAll(".nav-link")[1].style.color = "#000000";
+        document.querySelectorAll(".nav-link")[2].style.color = "#000000";
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".header__title").style.display = "block";
         
     } else {
         document.getElementById("header").classList.remove("header-scroll");

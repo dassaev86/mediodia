@@ -1,0 +1,10 @@
+<svg id="Sol" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="475.52" height="475.521" viewBox="0 0 475.52 475.521">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_121" data-name="Rectangle 121" width="475.52" height="475.521" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_100" data-name="Group 100" clip-path="url(#clip-path)">
+    <path id="Path_249" data-name="Path 249" d="M0,0H475.52V475.521H0ZM427.52,237.44A189.439,189.439,0,1,0,238.081,426.88,189.012,189.012,0,0,0,427.52,237.44" fill="#fff"/>
+  </g>
+</svg>

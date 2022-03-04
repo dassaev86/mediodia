@@ -1,0 +1,10 @@
+<svg id="u_baja" data-name="u baja" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="262.4" height="512" viewBox="0 0 262.4 512">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_115" data-name="Rectangle 115" width="262.4" height="512" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_88" data-name="Group 88" clip-path="url(#clip-path)">
+    <path id="Path_242" data-name="Path 242" d="M0,369.28V183.04H49.28V369.28c0,51.2,15.36,96,74.24,96,65.92,0,89.6-51.2,89.6-90.24v-192H262.4v320H213.12V449.28c-22.4,41.6-57.6,62.72-98.56,62.72C49.28,512,0,466.561,0,369.28M69.76,58.88a58.879,58.879,0,1,1,58.88,58.88A58.725,58.725,0,0,1,69.76,58.88m86.4,0A27.52,27.52,0,1,0,128.64,86.4a27.316,27.316,0,0,0,27.52-27.52" fill="#fff"/>
+  </g>
+</svg>

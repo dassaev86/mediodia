@@ -25,38 +25,41 @@
        <nav>
             <img src="assets/logo.gif" class="logo-negro" alt="logo">
             <img src="assets/logo-blanco.gif" class="logo-blanco" alt="logo">
-            <div class="push">Mediodia-Mediodia-Medio</div>
+            <div class="push"></div>
             <!-- <div id="logo-animado"></div> -->
             <img src="assets/sun.png" id="sun-white" class="sun" alt="sun-icon">
             <img src="assets/sun-black.png" id="sun-black" class="sun" alt="sun-icon">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">CASE STUDIES</a>
+                <a class="nav-link" aria-current="page" href="#strategy">CASE STUDIES</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">JOIN US</a>
+                <a class="nav-link" href="#services">JOIN US</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="#footer_contact">CONTACT</a>
                 </li>
             </ul>
             <img src="assets/side-arrow-menu.png" class="side-arrow-menu" alt="side-arrow-menu">
 
             <ul class="nav-links-mobile">
               <li>
-              <a href="#">CASE STUDIES</a>
+              <a href="#core-mobile" onclick='navLinks.classList.toggle("open");'>CASE STUDIES</a>
               </li>
               <li>
-              <a href="#">JOIN US</a>
+              <a href="#services" onclick='navLinks.classList.toggle("open");'>JOIN US</a>
               </li>
               <li>
-              <a href="#">CONTACT</a>
+              <a href="#footer_contact" onclick='navLinks.classList.toggle("open");'>CONTACT</a>
               </li>
               <li>
                 <a href="#">IG</a>
                 </li>
           </ul>
         </nav>
+
+        <div class="loader">
+        </div>
 
         <h1 class="header__title">Relevant brands. Meaningful design. Extraordinary companies.</h1>
 
@@ -69,7 +72,7 @@
 
 <div class="core-desktop">
 
-  <section class="strategy">
+  <section id="strategy" class="strategy">
 
       <div class="row">
         <div class="col-6 strategy-left">
@@ -150,7 +153,7 @@
 
   </div>
 
-  <div class="core-mobile">
+  <div id="core-mobile" class="core-mobile">
 
     <section class="strategy-mobile">
         <h1 class="title-mobile" data-aos="fade-up" data-aos-duration="1000">CREATIVE<br>STRATEGY</h1>
@@ -215,9 +218,9 @@
 
   </div>  
 
-    <section class="services">
+    <section id="services" class="services">
 
-      <h1 class="services__title">SERVICES ↘</h1>
+      <h1 id="services__title" class="services__title">SERVICES ↘</h1>
 
       <div class="accordion" id="main-accordion">
 
@@ -328,7 +331,7 @@
     </section>
 
 
-    <footer>
+    <footer id="footer_contact">
       <img src="assets/mediodia-logo-big.png" alt="logo-big">
 
       <div class="footer__marquee">

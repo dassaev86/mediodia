@@ -3,12 +3,18 @@
     src: url(./assets/Mediodia-Regular.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0 auto;
     font-family: Mediodia;
     width: 100%;
     background-color: #000000;
     transition: all ease 2s;
+    transition: smo;
+    overflow-x: hidden;
 }
 
 header {
@@ -48,9 +54,9 @@ nav {
 
 nav .logo-negro {
     width: 320px;
-    height: 100px;
+    height: 140px;
     position: absolute;
-    top: 30px;
+    top: 12px;
     left: 3%;
     opacity: 1;
     transition: all ease 1s;
@@ -58,9 +64,9 @@ nav .logo-negro {
 
 nav .logo-blanco {
     width: 320px;
-    height: 100px;
+    height: 140px;
     position: absolute;
-    top: 30px;
+    top: 312x;
     left: 3%;
     opacity: 0;
     transition: all ease 1s;
@@ -79,12 +85,6 @@ nav #logo-animado {
     animation: changeBg 1s infinite;
 }
 
-/* @keyframes changeBg {
-    0%,100%  {background-image: url("assets/logo-animacion/md01.png");}
-    25% {background-image: url("assets/logo-animacion/md02.png");}
-    50% {background-image: url("assets/logo-animacion/md03.png");}
-    75% {background-image: url("assets/logo-animacion/md04.png");}
- } */
 
 nav .sun {
     width: 78px;
@@ -95,7 +95,7 @@ nav .sun {
 }
 
 #sun-white {
-    display: block;
+    display: none;
 }
 
 #sun-black {
@@ -126,11 +126,79 @@ nav ul {
     display: none;
 }
 
+.loader {
+    /* background-color: red; */
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    animation: changeBg 3s linear infinite;
+    margin: 0 auto;
+    background-position: center;
+}
+
+
+/* @keyframes changeBg {
+    0%,100%  {background-image: url("assets/logo-animacion/01.svg");}
+    5% {background-image: url("assets/logo-animacion/02.svg");}
+    10% {background-image: url("assets/logo-animacion/03.svg");}
+    15% {background-image: url("assets/logo-animacion/04.svg");}
+    20% {background-image: url("assets/logo-animacion/05.svg");}
+    25% {background-image: url("assets/logo-animacion/06.svg");}
+    30% {background-image: url("assets/logo-animacion/07.svg");}
+    35% {background-image: url("assets/logo-animacion/08.svg");}
+    40% {background-image: url("assets/logo-animacion/09.svg");}
+    45% {background-image: url("assets/logo-animacion/10.svg");}
+    50% {background-image: url("assets/logo-animacion/11.svg");}
+    55% {background-image: url("assets/logo-animacion/12.svg");}
+    60% {background-image: url("assets/logo-animacion/13.svg");}
+    65% {background-image: url("assets/logo-animacion/14.svg");}
+    70% {background-image: url("assets/logo-animacion/15.svg");}
+    75% {background-image: url("assets/logo-animacion/16.svg");}
+    80% {background-image: url("assets/logo-animacion/17.svg");}
+    85% {background-image: url("assets/logo-animacion/18.svg");}
+    90% {background-image: url("assets/logo-animacion/19.svg");}
+    95% {background-image: url("assets/logo-animacion/20.svg");}
+ } */
+
+ @keyframes changeBg {
+    0% {background-image: url("assets/logo-animacion/01.svg");}
+    3% {background-image: url("assets/logo-animacion/02.svg");}
+    6% {background-image: url("assets/logo-animacion/03.svg");}
+    9% {background-image: url("assets/logo-animacion/04.svg");}
+    12% {background-image: url("assets/logo-animacion/05.svg");}
+    15% {background-image: url("assets/logo-animacion/06.svg");}
+    18% {background-image: url("assets/logo-animacion/07.svg");}
+    21% {background-image: url("assets/logo-animacion/08.svg");}
+    24% {background-image: url("assets/logo-animacion/09.svg");}
+    27% {background-image: url("assets/logo-animacion/10.svg");}
+    30% {background-image: url("assets/logo-animacion/11.svg");}
+    33% {background-image: url("assets/logo-animacion/12.svg");}
+    36% {background-image: url("assets/logo-animacion/13.svg");}
+    39% {background-image: url("assets/logo-animacion/14.svg");}
+    42% {background-image: url("assets/logo-animacion/15.svg");}
+    45% {background-image: url("assets/logo-animacion/16.svg");}
+    48% {background-image: url("assets/logo-animacion/17.svg");}
+    51% {background-image: url("assets/logo-animacion/18.svg");}
+    54% {background-image: url("assets/logo-animacion/19.svg");}
+    57%, 100% {background-image: url("assets/logo-animacion/20.svg");}
+ }
+
+@keyframes animateMarquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-300%, 0);
+    }
+}
+
 .header__title {
     font-size: 100px;
     width: 60%;
     margin-left: 40%;
     margin-top: 120px;
+    display: none;
 }
 
 .header__scrolldown {
@@ -705,6 +773,13 @@ footer img {
         }
     }
 
+    .accordion-button {
+        font-size: 85px;
+        line-height: 85px;
+        height: 190px;
+    }
+    
+
 }
 
 
@@ -781,7 +856,8 @@ footer img {
 
     .accordion-button {
         font-size: 65px;
-        height: 120px;
+        line-height: 65px;
+        height: 150px;
     }
 
     .accordion-body ul li {
@@ -923,7 +999,8 @@ footer img {
 
     .accordion-button {
         font-size: 50px;
-        height: 100px;
+        line-height: 50px;
+        height: 110px;
     }
 
     .accordion-body ul li {
@@ -978,8 +1055,8 @@ footer img {
 
     .side-arrow-menu {
         display: block;
-        margin-top: 0;
-        margin-left: 5px;
+        margin-top: 20px;
+        margin-left: 10px;
         z-index: 10;
         cursor: pointer;
         width: 40px;
@@ -1005,7 +1082,7 @@ footer img {
         transition: all 1s ease-out;
         z-index: 5;
         pointer-events: none;
-        margin-top: 110px;
+        padding-top: 110px;
     }
 
     .nav-links-mobile.open {
@@ -1031,7 +1108,7 @@ footer img {
 
     nav .logo-negro {
         width: 200px;
-        height: 60px;
+        height: 80px;
         top: 0;
         left: 0;
         position: absolute;
@@ -1039,7 +1116,7 @@ footer img {
     
     nav .logo-blanco {
         width: 200px;
-        height: 60px;
+        height: 80px;
         top: 0;
         left: 0;
         position: absolute;
@@ -1050,7 +1127,7 @@ footer img {
         width: 30px;
         height: 30px;
         z-index: 10;
-        top: 15px;
+        top: 25px;
         right: 10%;
     }
 
@@ -1060,6 +1137,14 @@ footer img {
         position: absolute;
         top: 25px;
         right: 5%;
+    }
+
+    .loader {
+        background-size: 100px;
+        width: 200px;
+        height: 200px;
+        background-position: center;
+        margin-top: 50px;
     }
 
 
@@ -1403,14 +1488,14 @@ footer img {
     }
 
     nav .sun {
-        right: 13%;
+        right: 14%;
     }
 
 }
 
 @media screen and (max-width: 380px) {
     nav .sun {
-        right: 15%;
+        right: 16%;
     }
 }
 
