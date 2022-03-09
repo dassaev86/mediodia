@@ -168,85 +168,118 @@ window.addEventListener('scroll', function(e) {
 
   // ANIMACIONES DE STRATEGY EN DESKTOP
 
-  const strategyClock = new ScrollMagic.Scene({ triggerElement: ".strategy", duration: "100%", offset: -200, triggerHook: 0 })
+  const estira = new ScrollMagic.Scene({ triggerElement: ".section2", duration: "100%", offset: 0, triggerHook: 0 })
+.setTween("#estira", 1, { className: "+=estirado" })
+// .addIndicators({ name: "marker_scene" })
+.setPin('.section2')
+.addTo(controller);
+
+  const imagen = new ScrollMagic.Scene({ triggerElement: ".section2", duration: "100%", offset: 0, triggerHook: 0 })
+.setTween("#imagen", 1, { className: "+=move" })
+// .addIndicators({ name: "marker_scene" })
+// .setPin('.section2')
+.addTo(controller);
+
+ 
+  const strategyClock = new ScrollMagic.Scene({ triggerElement: ".strategy", duration: "200%", offset: 0,  triggerHook: "onLeave" })
   .setTween("#strategy-clock", 1, { className: "+=strategy-clock-desk-animation" })
+  .setPin('.strategy')
+  // .addIndicators({ name: "reloj" })
   .addTo(controller);
 
-  const strategyImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".strategy", duration: "100%", offset: -200, triggerHook: 0 })
+  const strategyImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".strategy", duration: '200%', offset: 300, triggerHook: 0 })
   .setTween("#strategy-desk-img1", 1, { className: "+=strategy-img1-desk-animation" })
+  // .addIndicators({ name: "imagen" })
+  // .setPin('.strategy')
+  .addTo(controller);
+
+
+  // const strategyImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".strategy", duration: 1000, offset: 500 })
+  // .setTween("#strategy-desk-img1", 1, { className: "+=strategy-img1-desk-animation" })
+  // .addIndicators({ name: "imagen" })
+  // .setPin('.strategy')
+  // .addTo(controller);
+
+
+
+
+  // ANIMACIONES DE BRAND EN DESKTOP
+
+  const brandClock = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "400%", offset: 0, triggerHook: 0 })
+  .setTween("#brand-clock", 1, { className: "+=strategy-clock-desk-animation" })
+  .setPin('.brand')
+  .addTo(controller);
+
+  const brandImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "250%", offset: 300, triggerHook: 0 })
+  .setTween("#brand-desk-img1", 1, { className: "+=brand-img1-desk-animation" })
+  // .addIndicators({ name: "reloj" })
+//   .setPin('.strategy')
+  .addTo(controller);
+
+  const brandImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "250%", offset: 1000, triggerHook: 0 })
+  .setTween("#brand-desk-img2", 1, { className: "+=brand-img2-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
+
+  const brandImgDesk3 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "250%", offset: 1700, triggerHook: 0 })
+  .setTween("#brand-desk-img3", 1, { className: "+=brand-img3-desk-animation" })
   // .addIndicators({ name: "marker_scene" })
 //   .setPin('.strategy')
   .addTo(controller);
 
 
-    // ANIMACIONES DE BRAND EN DESKTOP
+  // ANIMACIONES DE EXPRESSION EN DESKTOP
 
-    const brandClock = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "100%", offset: -200, triggerHook: 0 })
-    .setTween("#brand-clock", 1, { className: "+=strategy-clock-desk-animation" })
-    .addTo(controller);
+  const expressionClock = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "450%", offset: 0, triggerHook: 0 })
+  .setTween("#expression-clock", 1, { className: "+=strategy-clock-desk-animation" })
+  .setPin('.expression')
+  .addTo(controller);
 
-    const brandImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "100%", offset: -200, triggerHook: 0 })
-    .setTween("#brand-desk-img1", 1, { className: "+=brand-img1-desk-animation" })
-    // .addIndicators({ name: "marker_scene" })
-  //   .setPin('.strategy')
-    .addTo(controller);
-  
-    const brandImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "100%", offset: 200, triggerHook: 0 })
-    .setTween("#brand-desk-img2", 1, { className: "+=brand-img2-desk-animation" })
-    // .addIndicators({ name: "marker_scene" })
-  //   .setPin('.strategy')
-    .addTo(controller);
+  const expressionImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "250%", offset: 300, triggerHook: 0 })
+  .setTween("#expression-desk-img1", 1, { className: "+=expression-img1-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
 
-    const brandImgDesk3 = new ScrollMagic.Scene({ triggerElement: ".brand", duration: "100%", offset: 600, triggerHook: 0 })
-    .setTween("#brand-desk-img3", 1, { className: "+=brand-img3-desk-animation" })
-    // .addIndicators({ name: "marker_scene" })
-  //   .setPin('.strategy')
-    .addTo(controller);
+  const expressionImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "250%", offset: 1000, triggerHook: 0 })
+  .setTween("#expression-desk-img2", 1, { className: "+=expression-img2-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
 
-
-        // ANIMACIONES DE BRAND EN EXPRESSION
-
-        const expressionClock = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "100%", offset: -200, triggerHook: 0 })
-        .setTween("#expression-clock", 1, { className: "+=strategy-clock-desk-animation" })
-        .addTo(controller);
-
-        const expressionImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "100%", offset: -200, triggerHook: 0 })
-        .setTween("#expression-desk-img1", 1, { className: "+=expression-img1-desk-animation" })
-        // .addIndicators({ name: "marker_scene" })
-      //   .setPin('.strategy')
-        .addTo(controller);
-      
-        const expressionImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "100%", offset: 200, triggerHook: 0 })
-        .setTween("#expression-desk-img2", 1, { className: "+=expression-img2-desk-animation" })
-        // .addIndicators({ name: "marker_scene" })
-      //   .setPin('.strategy')
-        .addTo(controller);
-    
-        const expressionImgDesk3 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "100%", offset: 600, triggerHook: 0 })
-        .setTween("#expression-desk-img3", 1, { className: "+=expression-img3-desk-animation" })
-        // .addIndicators({ name: "marker_scene" })
-      //   .setPin('.strategy')
-        .addTo(controller);
+  const expressionImgDesk3 = new ScrollMagic.Scene({ triggerElement: ".expression", duration: "250%", offset: 1700, triggerHook: 0 })
+  .setTween("#expression-desk-img3", 1, { className: "+=expression-img3-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
 
 
-        // ANIMACIONES DE BRAND EN DIALOGUE
+  // ANIMACIONES DE DIALOGUE DESKTOP
 
-        const dialogueClock = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "100%", offset: -200, triggerHook: 0 })
-        .setTween("#dialogue-clock", 1, { className: "+=strategy-clock-desk-animation" })
-        .addTo(controller);
+  const dialogueClock = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "350%", offset: 0, triggerHook: 0 })
+  .setTween("#dialogue-clock", 1, { className: "+=strategy-clock-desk-animation" })
+  .setPin('.dialogue')
+  .addTo(controller);
 
-        const dialogueImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "100%", offset: -200, triggerHook: 0 })
-        .setTween("#dialogue-desk-img1", 1, { className: "+=dialogue-img1-desk-animation" })
-        // .addIndicators({ name: "marker_scene" })
-      //   .setPin('.strategy')
-        .addTo(controller);
-      
-        const dialogueImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "100%", offset: 200, triggerHook: 0 })
-        .setTween("#dialogue-desk-img2", 1, { className: "+=dialogue-img2-desk-animation" })
-        // .addIndicators({ name: "marker_scene" })
-      //   .setPin('.strategy')
-        .addTo(controller);
-    
+  const dialogueImgDesk1 = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "250%", offset: 300, triggerHook: 0 })
+  .setTween("#dialogue-desk-img1", 1, { className: "+=dialogue-img1-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
+
+  const logosContainer = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "250%", offset: 300, triggerHook: 0 })
+  .setTween("#logos-container", 1, { className: "+=dialogue-logos-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
+
+  const dialogueImgDesk2 = new ScrollMagic.Scene({ triggerElement: ".dialogue", duration: "250%", offset: 950, triggerHook: 0 })
+  .setTween("#dialogue-desk-img2", 1, { className: "+=dialogue-img2-desk-animation" })
+  // .addIndicators({ name: "marker_scene" })
+//   .setPin('.strategy')
+  .addTo(controller);
+
 
         
 
